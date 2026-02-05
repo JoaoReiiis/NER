@@ -3,12 +3,14 @@ PASTA_DATASET = "cachacaNER"
 TOTAL_FOLDS = 10
 LIMIT_SAMPLES = None
 BENCHMARK_MODELS = [
+    "qwen3:0.6b",
+    "qwen3:1.7b",
     "qwen3:4b",
     "llama3.2:1b",
     "llama3.2:3b"
 ]
 
-BENCHMARK_SHOTS = [5]
+BENCHMARK_SHOTS = [0,3,5]
 OLLAMA_OPTS = {
     'temperature': 0.0,
     'num_ctx': 2048,
